@@ -1,0 +1,36 @@
+.navigation {
+	background: $dark-gray;
+	font-weight: $font-bold;
+	font-size: 1.6rem;
+	display: none;
+	@include media-breakpoint-up(lg) {
+		display: flex;
+	}
+	.container {
+		.row {
+			.nav-bar {
+				.row {
+					nav {
+						ul.nav {
+							display: flex;
+							justify-content: space-between;
+							flex-direction: row;
+							padding: 0;
+							width: 100%;
+							li {
+								a {
+									color: $white;
+									text-decoration: none;
+									padding: 1rem;
+									&:hover {
+										background: linear-gradient(0deg, rgba(98,187,70,1) 0%, rgba(4,138,171,1) 100%); 
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

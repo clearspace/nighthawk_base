@@ -1,0 +1,12 @@
+uuid: 086d9e11-3709-43d0-a452-354f3e59f2ed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: taVBeR1aK9UcQxj0JQBmIHOyokEEVS3b5KoGbF04MSc
+id: bp_columns_two_uneven
+label: 'Columns (Two Uneven)'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

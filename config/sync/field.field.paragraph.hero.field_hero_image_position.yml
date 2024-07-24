@@ -1,0 +1,23 @@
+uuid: 034ab589-2153-4c1f-9306-c36684a82b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_image_position
+    - paragraphs.paragraphs_type.hero
+  module:
+    - options
+id: paragraph.hero.field_hero_image_position
+field_name: field_hero_image_position
+entity_type: paragraph
+bundle: hero
+label: 'Hero Image Position'
+description: 'If an image is displayed in the hero, should it be displayed to the left of the text or to the right of the text? The default is that it should be displayed to the right of the text.'
+required: false
+translatable: false
+default_value:
+  -
+    value: image_right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

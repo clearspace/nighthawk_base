@@ -1,0 +1,23 @@
+uuid: 0aa9440d-4ba1-4b70-8230-cdb85c92afd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_type
+    - node.type.page
+  module:
+    - options
+id: node.page.field_page_type
+field_name: field_page_type
+entity_type: node
+bundle: page
+label: 'Page Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: basic
+default_value_callback: ''
+settings: {  }
+field_type: list_string
