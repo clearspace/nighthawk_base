@@ -1,0 +1,22 @@
+uuid: 7afe058b-b2ab-4f25-9c07-f0331e7d389f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nighthawk_base
+_core:
+  default_config_hash: v-j8FB_MTaQG4o2gjaUisxa9zOuZj4jRRRvvGmnpW7g
+id: nighthawk_base_primary_local_tasks
+theme: nighthawk_base
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 5e4f7092-e23f-4290-803f-8e0badaeba26
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nighthawk_base
+_core:
+  default_config_hash: giFKXigs3YzowK4Xi06sBBC0kifekx064_wfQ1FVHpA
+id: nighthawk_base_help
+theme: nighthawk_base
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -6,14 +6,17 @@ dependencies:
     - field.field.paragraph.hero.field_h1_font
     - field.field.paragraph.hero.field_h1_second_line
     - field.field.paragraph.hero.field_h1_title
+    - field.field.paragraph.hero.field_hero_background_color
     - field.field.paragraph.hero.field_hero_background_image
     - field.field.paragraph.hero.field_hero_background_image_mobi
     - field.field.paragraph.hero.field_hero_body
     - field.field.paragraph.hero.field_hero_centered
     - field.field.paragraph.hero.field_hero_image
+    - field.field.paragraph.hero.field_hero_image_caption
     - field.field.paragraph.hero.field_hero_image_position
     - field.field.paragraph.hero.field_hero_link_subtext
     - field.field.paragraph.hero.field_hero_links
+    - field.field.paragraph.hero.field_hero_text_color
     - paragraphs.paragraphs_type.hero
   module:
     - field_layout
@@ -53,23 +56,29 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_hero_background_color:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_hero_background_image:
     type: media_library_widget
-    weight: 4
+    weight: 6
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_hero_background_image_mobi:
     type: media_library_widget
-    weight: 10
+    weight: 7
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_hero_body:
     type: text_textarea
-    weight: 5
+    weight: 8
     region: content
     settings:
       rows: 5
@@ -84,20 +93,28 @@ content:
     third_party_settings: {  }
   field_hero_image:
     type: media_library_widget
-    weight: 8
+    weight: 11
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
+  field_hero_image_caption:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_hero_image_position:
     type: options_select
-    weight: 9
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_hero_link_subtext:
     type: string_textfield
-    weight: 7
+    weight: 10
     region: content
     settings:
       size: 60
@@ -105,7 +122,7 @@ content:
     third_party_settings: {  }
   field_hero_links:
     type: link_attributes
-    weight: 6
+    weight: 9
     region: content
     settings:
       placeholder_url: ''
@@ -117,6 +134,12 @@ content:
         rel: true
         class: true
         accesskey: false
+    third_party_settings: {  }
+  field_hero_text_color:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

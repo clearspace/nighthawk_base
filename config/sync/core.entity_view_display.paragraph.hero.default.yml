@@ -6,14 +6,17 @@ dependencies:
     - field.field.paragraph.hero.field_h1_font
     - field.field.paragraph.hero.field_h1_second_line
     - field.field.paragraph.hero.field_h1_title
+    - field.field.paragraph.hero.field_hero_background_color
     - field.field.paragraph.hero.field_hero_background_image
     - field.field.paragraph.hero.field_hero_background_image_mobi
     - field.field.paragraph.hero.field_hero_body
     - field.field.paragraph.hero.field_hero_centered
     - field.field.paragraph.hero.field_hero_image
+    - field.field.paragraph.hero.field_hero_image_caption
     - field.field.paragraph.hero.field_hero_image_position
     - field.field.paragraph.hero.field_hero_link_subtext
     - field.field.paragraph.hero.field_hero_links
+    - field.field.paragraph.hero.field_hero_text_color
     - paragraphs.paragraphs_type.hero
   module:
     - field_layout
@@ -53,6 +56,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_hero_background_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
     region: content
   field_hero_background_image:
     type: entity_reference_entity_view
@@ -98,6 +108,14 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
+  field_hero_image_caption:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
   field_hero_image_position:
     type: list_default
     label: above
@@ -124,5 +142,12 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_hero_text_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
     region: content
 hidden: {  }

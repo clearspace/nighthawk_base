@@ -10,7 +10,6 @@ dependencies:
     - entity_reference_revisions
     - field_layout
     - layout_discovery
-    - options
     - user
 third_party_settings:
   field_layout:
@@ -26,21 +25,17 @@ mode: default
 content:
   field_hero:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_page_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   links:
-    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_page_type: true

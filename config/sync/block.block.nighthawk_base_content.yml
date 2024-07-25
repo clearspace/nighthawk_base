@@ -1,0 +1,22 @@
+uuid: 8ca231b3-5a07-486f-ab92-674253159ad9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nighthawk_base
+_core:
+  default_config_hash: 4F2-e465j1vbhQLv4o3mzhZNFW3HOOq9JgMes25u5og
+id: nighthawk_base_content
+theme: nighthawk_base
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
