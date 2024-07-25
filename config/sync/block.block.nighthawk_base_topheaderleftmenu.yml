@@ -1,0 +1,25 @@
+uuid: 7c8dccd9-ab59-4d2d-b56e-06c390f00fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-header-left-menu
+  module:
+    - system
+  theme:
+    - nighthawk_base
+id: nighthawk_base_topheaderleftmenu
+theme: nighthawk_base
+region: top_header_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:top-header-left-menu'
+settings:
+  id: 'system_menu_block:top-header-left-menu'
+  label: 'Top Header Left Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

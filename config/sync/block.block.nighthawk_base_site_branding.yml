@@ -10,8 +10,8 @@ _core:
   default_config_hash: rau8LUPqLxnHXeXQe_Q0-MeTqJP_4B9SZYLSBuUO624
 id: nighthawk_base_site_branding
 theme: nighthawk_base
-region: header
-weight: -7
+region: header_left
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:

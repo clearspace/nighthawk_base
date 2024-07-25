@@ -74,59 +74,51 @@
 <div id="page-wrapper">
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
-      {% block head %}
-        {% if page.secondary_menu or page.top_header or page.top_header_form %}
-          <nav{{ navbar_top_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form ms-auto">
-                  {{ page.top_header_form }}
-                </div>
-              {% endif %}
-          {% if container_navbar %}
+      {% if page.top_header_left or page.top_header_right %}
+       <div class="top-header">
+        <div class="container">
+          <div class="row">
+            {% if page.top_header_left %}
+              <div class="col-12 col-xl-6 top-header-left">
+                {{ page.top_header_left }}
+              </div>
+            {% endif %}
+            {% if page.top_header_right %}
+              <div class="col-12 col-xl-6 top-header-right">
+                {{ page.top_header_right }}
+              </div>
+            {% endif %}
           </div>
-          {% endif %}
-          </nav>
-        {% endif %}
-        {% if page.header or page.primary_menu or page.header_form %}
-          <nav{{ navbar_attributes }}>
-            {% if container_navbar %}
-            <div class="container">
-            {% endif %}
-              {{ page.header }}
-              {% if page.primary_menu or page.header_form %}
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="{{ navbar_collapse_class }}" id="CollapsingNavbar">
-                  {% if navbar_offcanvas %}
-                    <div class="offcanvas-header">
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                  {% endif %}
-                  {{ page.primary_menu }}
-                  {% if page.header_form %}
-                    <div class="form-inline navbar-form justify-content-end">
-                      {{ page.header_form }}
+        </div>
+       </div> 
+      {% endif %}
+      {% if page.header_left or page.header_top_right or page.header_bottom_right %}
+        <div class="header-main">
+          <div class="container">
+            <div class="row">
+              {% if page.header_left %}
+                <div class="col-12 col-xl-6 header-left">
+                  {{ page.header_left }}
+                </div>
+              {% endif %}
+              {% if page.header_top_right or page.header_bottom_right %}
+                <div class="col-12 col-xl-6 header-right">
+                  {% if page.header_top_right %}
+                    <div class="header-top-right">
+                      {{ page.header_top_right }}
                     </div>
                   {% endif %}
-                  {% if navbar_offcanvas %}
+                  {% if page.header_bottom_right %}
+                    <div class="header-top-right">
+                      {{ page.header_bottom_right }}
                     </div>
                   {% endif %}
                 </div>
               {% endif %}
-              {% if sidebar_collapse %}
-                <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-              {% endif %}
-            {% if container_navbar %}
             </div>
-            {% endif %}
-          </nav>
-        {% endif %}
-      {% endblock %}
+          </div>
+        </div>
+      {% endif %}
     </header>
     {% if page.highlighted %}
       <div class="highlighted">
