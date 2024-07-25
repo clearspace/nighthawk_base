@@ -893,6 +893,19 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 $settings['config_sync_directory'] = '../config/sync';
 
+$databases['default']['default'] = array (
+  'database' => 'nighthawk_base',
+  'username' => 'nighthawk_base',
+  'password' => 'iHiw44?01',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'driver' => 'mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
 }
