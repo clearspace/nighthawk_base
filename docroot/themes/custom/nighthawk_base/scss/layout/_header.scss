@@ -1,182 +1,28 @@
-header {
-	padding-top: 2rem;
-	padding-bottom: 3rem;
-	.container {
-		.row {
-			.header-left {
-				.row {
-					a.navbar-brand {
+.header {
+	.top-header {
+
+	}
+	.header-main {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		.container {
+			.row {
+				.header-left {
+					.region-header-left {
 
 					}
 				}
-			}
-			.header-right {
-				.row {
-					display: flex;
-					align-items: center;
-					#block-oah-signupfornotifications {
-						width: 36%;
-						display: none;
-						@include media-breakpoint-up(lg) {
-							display: block;
-						}
-						.content {
-							.field--name-body {
-								p {
-									margin: 0;
-									a {
-										text-decoration: none;
-										font-weight: $font-bold;
-										font-size: 1.4rem;
-										color: $black;
-										display: flex;
-										align-items: center;
-										&:hover {
-											text-decoration: underline;
-										}
-										&:before {
-											font-family: $fa;
-											content: "\f09e";
-											color: $green;
-											margin-right: .5rem; 
-											font-size: 1.8rem;
-										}
-									}
-								}
-							}
-						}
-					}
-					#block-oah-loginorregister {
-						width: 36%;
-						display: none;
-						@include media-breakpoint-up(lg) {
+				.header-right {
+					.header-top-right {
+						margin-bottom: 1rem;
+						.region-header-top-right {
 							display: flex;
 							justify-content: flex-end;
 						}
-						.content {
-							.field--name-body {
-								p {
-									margin: 0;
-									a {
-										text-decoration: none;
-										font-weight: $font-bold;
-										font-size: 1.4rem;
-										color: $black;
-										display: flex;
-										align-items: center;
-										&:hover {
-											text-decoration: underline;
-										}
-										&:before {
-											content: "\f007";
-											color: $green;
-											font-family: $fa;
-											margin-right: .5rem;
-											font-size: 1.8rem;
-										}
-									}
-								}
-							}
-						}
 					}
-					#block-oah-search-form-wide {
-						width: 27%;
-						display: none;
-						@include media-breakpoint-up(lg) {
-							display: block;
-						}
-						.content {
-							width: 100%;
-							.content {
-								width: 100%;
-								display: flex;
-								justify-content: flex-end;
-								form#search-block-form {
-									position: relative;
-									transition: all .35s,border-radius 0s;
-									height: 3.6rem;
-									background-color: $green;
-									box-shadow: 0 .1rem .1rem rgba(0,0,0,0.075) inset;
-									border-radius: 0 2.5rem 2.5rem 0;
-									border: .1rem solid $white;
-									z-index: 1000;
-									border-radius: 2.5rem;
-									border-top-left-radius: 0;
-									border-bottom-left-radius: 0;
-									width: 12rem;
-									margin-top: .3rem;
-									@include media-breakpoint-up(lg) {
-										border-top-left-radius: 2.5rem;
-										border-bottom-left-radius: 2.5rem;
-										width: 3.2rem;
-									}
-									&:hover {
-										width: 100%;
-										border-radius: .4rem 2.5rem 2.5rem .4rem;
-									}
-									.js-form-item {
-										width: 95%;
-										input {
-											padding: .2rem .7rem;
-											background: $green;
-											color: $white;
-											font-weight: $font-bold;
-											width: 100%;
-											font-size: 1.4rem;
-											border: none;
-											&::placeholder {
-												color: $white;
-											}
-										}
-									}
-									.form-actions {
-										button {
-											position: absolute;
-											top: 0;
-											right: -2px;
-											z-index: 2;
-											display: block;
-											width: 3.4rem;
-											height: 3.4rem;
-											line-height: 1;
-											text-align: center;
-											color: $white;
-											left: initial;
-											font-size: 0;
-											background: $green;
-											border: none;
-											border-radius: 2.5rem;
-											&:before {
-												font-family: $fa;
-												font-size: 1.4rem;
-												content: "\f002";
-												height: 1rem;
-												color: $white;
-												margin-right: .5rem;
-												height: 1.5rem;
-												padding-top: .5rem;
-												padding-left: .2rem;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					#block-oah-responsivemenumobileicon.responsive-menu-toggle-wrapper.responsive-menu-toggle {
-						display: flex;
-						justify-content: flex-end;
-						@include media-breakpoint-up(lg) {
-							display: none;
-						}
-						.content {
-							a.responsive-menu-toggle-icon {
-								&:before, 
-								&:after,
-								span.icon {
-									background: $black;
-								}
-							}
+					.header-bottom-right {
+						.region-header-bottom-right {
+
 						}
 					}
 				}

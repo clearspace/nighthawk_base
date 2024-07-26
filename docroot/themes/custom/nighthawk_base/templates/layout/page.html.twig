@@ -79,12 +79,12 @@
         <div class="container">
           <div class="row">
             {% if page.top_header_left %}
-              <div class="col-12 col-xl-6 top-header-left">
+              <div class="col-12 col-lg-6 top-header-left">
                 {{ page.top_header_left }}
               </div>
             {% endif %}
             {% if page.top_header_right %}
-              <div class="col-12 col-xl-6 top-header-right">
+              <div class="col-12 col-lg-6 top-header-right">
                 {{ page.top_header_right }}
               </div>
             {% endif %}
@@ -97,19 +97,19 @@
           <div class="container">
             <div class="row">
               {% if page.header_left %}
-                <div class="col-12 col-xl-6 header-left">
+                <div class="col-6 col-lg-3 header-left">
                   {{ page.header_left }}
                 </div>
               {% endif %}
               {% if page.header_top_right or page.header_bottom_right %}
-                <div class="col-12 col-xl-6 header-right">
+                <div class="col-6 col-lg-9 header-right">
                   {% if page.header_top_right %}
                     <div class="header-top-right">
                       {{ page.header_top_right }}
                     </div>
                   {% endif %}
                   {% if page.header_bottom_right %}
-                    <div class="header-top-right">
+                    <div class="header-bottom-right">
                       {{ page.header_bottom_right }}
                     </div>
                   {% endif %}
