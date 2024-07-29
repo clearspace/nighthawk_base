@@ -363,6 +363,14 @@
     "conflict": {
         "drupal/drupal": "*"
     },
+    "scripts": {
+        "post-install-cmd": [
+            "./git_clean.sh"
+        ],
+        "post-update-cmd": [
+            "./git_clean.sh"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
