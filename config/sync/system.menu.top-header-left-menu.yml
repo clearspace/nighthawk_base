@@ -1,8 +1,0 @@
-uuid: 73ebac72-8aea-44f5-aa5d-4bfc996197d9
-langcode: en
-status: true
-dependencies: {  }
-id: top-header-left-menu
-label: 'Top Header Left Menu'
-description: ''
-locked: false

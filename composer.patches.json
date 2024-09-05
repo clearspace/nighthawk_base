@@ -2,7 +2,9 @@
   "patches": {
     "drupal/core": {
       "TypeError: Argument 1 passed to Drupal Core File FileUrlGenerator::generateString() must be of the type string, null given: 3254245": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
-      "2893747: Call to a member function getColumns() on boolean": "https://www.drupal.org/files/issues/2020-10-29/2893747-33.patch"
+      "2893747: Call to a member function getColumns() on boolean": "https://www.drupal.org/files/issues/2020-10-29/2893747-33.patch",
+      "3368250: Deprecated creation of dynamic property in TypedData": "https://www.drupal.org/files/issues/2024-05-03/3368250_deprecated_dynamic_property_creation.patch",
+      "3272720: hash(): Passing null to parameter #2 ($data) of type string is deprecated in generateFieldTableName": "https://www.drupal.org/files/issues/2022-07-21/3272720-6.patch"
     },
     "drupal/back_to_top": {
     	"3151196: This module does not work in Drupal 9.0.0": "https://www.drupal.org/files/issues/2020-06-17/3151196-4.patch" 
@@ -35,6 +37,12 @@
     },
     "drupal/paragraphs_jquery_ui_accordion": {
       "3437045: Using a paragraph for the title field": "https://www.drupal.org/files/issues/2024-03-29/paragraphs_jquery_ui_accordion-3437045-1.patch"
+    },
+    "drupal/config_ignore": {
+      "3426943: Use ignore settings of the target storage if the config ignore config is ignored": "https://www.drupal.org/files/issues/2024-04-11/use-config-ignore-storage-if-config-ignore-is-self-ignored-3426943-13.patch"
+    },
+    "drupal/a11y_paragraphs_tabs": {
+      "3230830: A11Y Tabs not working with ajax content (eg. Popup modals)": "https://www.drupal.org/files/issues/2023-07-21/a11y_paragraphs_tabs-3230830-6.patch"
     }
   }
 }

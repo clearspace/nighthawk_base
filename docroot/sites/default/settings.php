@@ -891,7 +891,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
-$settings['config_sync_directory'] = '../config/sync';
+$settings['config_sync_directory'] = $app_root . '/../config/' . basename($site_path);
 
 $databases['default']['default'] = array (
   'database' => 'nighthawk_base',
@@ -908,4 +908,12 @@ $databases['default']['default'] = array (
  
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
+}
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/mnpera/mnpera-settings.inc';
+}
+// Automatically generated include for settings managed by ddev.
+$ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
+  require $ddev_settings;
 }
