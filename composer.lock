@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d13e30829ca78bf89cffc389dd9899e9",
+    "content-hash": "bdc36090d6cb19d1afd2250cdfbf7c81",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -16145,6 +16145,26 @@
                 "source": "https://github.com/mkalkbrenner/php-htmldiff/tree/master"
             },
             "time": "2016-07-25T17:07:32+00:00"
+        },
+        {
+            "name": "nighthawk/nighthawk_base_profile",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:clearspace/nighthawk_base_profile.git",
+                "reference": "master"
+            },
+            "type": "drupal-custom-profile"
+        },
+        {
+            "name": "nighthawk/nighthawk_base_theme",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:clearspace/nighthawk_base_theme.git",
+                "reference": "master"
+            },
+            "type": "drupal-custom-theme"
         },
         {
             "name": "nikic/php-parser",

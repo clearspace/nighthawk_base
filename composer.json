@@ -177,6 +177,8 @@
         "kenwheeler/slick": "dev-master",
         "kporras07/composer-symlinks": "^1.2",
         "mglaman/composer-drupal-lenient": "^1.0",
+        "nighthawk/nighthawk_base_profile": "master",
+        "nighthawk/nighthawk_base_theme": "master",
         "npm-asset/a11y-accordion-tabs": "^1.0.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "uninhabited/fitvids.js": "dev-master",
@@ -190,6 +192,32 @@
         "assets": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "nighthawk_base_theme": {
+            "type": "package",
+            "package": {
+                "name": "nighthawk/nighthawk_base_theme",
+                "type": "drupal-custom-theme",
+                "version": "master",
+                "source": {
+                    "url": "git@github.com:clearspace/nighthawk_base_theme.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "nighthawk_base_profile": {
+            "type": "package",
+            "package": {
+                "name": "nighthawk/nighthawk_base_profile",
+                "type": "drupal-custom-profile",
+                "version": "master",
+                "source": {
+                    "url": "git@github.com:clearspace/nighthawk_base_profile.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         },
         "blazy": {
             "type": "package",
