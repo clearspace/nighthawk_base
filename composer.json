@@ -199,10 +199,9 @@
                 "name": "nighthawk/nighthawk_base_theme",
                 "type": "drupal-custom-theme",
                 "version": "master",
-                "source": {
-                    "url": "git@github.com:clearspace/nighthawk_base_theme.git",
-                    "type": "git",
-                    "reference": "master"
+                "dist": {
+                    "url": "https://github.com/clearspace/nighthawk_base_theme/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -212,10 +211,9 @@
                 "name": "nighthawk/nighthawk_base_profile",
                 "type": "drupal-custom-profile",
                 "version": "master",
-                "source": {
-                    "url": "git@github.com:clearspace/nighthawk_base_profile.git",
-                    "type": "git",
-                    "reference": "master"
+                "dist": {
+                    "url": "https://github.com/clearspace/nighthawk_base_profile/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
