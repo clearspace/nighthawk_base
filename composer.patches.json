@@ -1,39 +1,10 @@
 {
   "patches": {
-    "drupal/core": {
-      "TypeError: Argument 1 passed to Drupal Core File FileUrlGenerator::generateString() must be of the type string, null given: 3254245": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch",
-      "2893747: Call to a member function getColumns() on boolean": "https://www.drupal.org/files/issues/2020-10-29/2893747-33.patch",
-      "3368250: Deprecated creation of dynamic property in TypedData": "https://www.drupal.org/files/issues/2024-05-03/3368250_deprecated_dynamic_property_creation.patch",
-      "3272720: hash(): Passing null to parameter #2 ($data) of type string is deprecated in generateFieldTableName": "https://www.drupal.org/files/issues/2022-07-21/3272720-6.patch"
-    },
-    "drupal/back_to_top": {
-    	"3151196: This module does not work in Drupal 9.0.0": "https://www.drupal.org/files/issues/2020-06-17/3151196-4.patch" 
-    },
-    "drupal/fitvids": {
-      "2881674: Add composer.json file": "https://www.drupal.org/files/issues/2020-10-19/fitvids-Add_composer.json_file-2881674-10.patch",
-      "3158833: Not applying to oEmbed videos": "https://www.drupal.org/files/issues/2020-07-13/fitvids-fix-oembed-issue-3158833-2.patch"
-    },
-     "drupal/devel": {
-        "Brings back the Available Methods & Properties tabs for Kint dumps — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
-    },
     "drupal/themable_forms": {
-        "2955278: Improved theme suggestions for exposed forms / filters": "https://www.drupal.org/files/issues/2021-07-09/themable_forms-2955278.patch"
-    },
-    "drupal/fullcalendar": {
-      "3066141: Error when using paragraph dates": "https://www.drupal.org/files/issues/2019-07-05/3066141-paragraph-date-error.patch"
+      "2955278: Improved theme suggestions for exposed forms / filters": "https://www.drupal.org/files/issues/2021-07-09/themable_forms-2955278.patch"
     },
     "drupal/paragraphs": {
       "3161823: Paragraphs widget not constrained to container width in Claro": "https://www.drupal.org/files/issues/2020-07-29/3161823-4-set-form-element-width.patch"
-    },
-    "drupal/county": {
-      "3286807: Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2022-06-15/county.1.x-dev.rector.patch"
-    },
-    "drupal/bfd": {
-      "3296630: Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-09-25/3296630-6.patch"
-    },
-    "drupal/feeds_para_mapper": {
-      "3096198: Typo in Importer.php causes PHP notice": "https://www.drupal.org/files/issues/2023-11-29/feeds_para_mapper-3096198-6-D8.patch",
-      "3244189: Error: Call to undefined method Drupal feeds TargetDefinition::getFieldDefinition()": "https://www.drupal.org/files/issues/2021-12-16/feeds_para_mapper-error-getFieldDefinition-3244189-4.patch"
     },
     "drupal/paragraphs_jquery_ui_accordion": {
       "3437045: Using a paragraph for the title field": "https://www.drupal.org/files/issues/2024-03-29/paragraphs_jquery_ui_accordion-3437045-1.patch"
@@ -43,6 +14,30 @@
     },
     "drupal/a11y_paragraphs_tabs": {
       "3230830: A11Y Tabs not working with ajax content (eg. Popup modals)": "https://www.drupal.org/files/issues/2023-07-21/a11y_paragraphs_tabs-3230830-6.patch"
+    },
+    "drupal/responsive_menus": {
+      "3434217: Automated Drupal 11 compatibility fixes for responsive_menus": "https://www.drupal.org/files/issues/2025-01-12/responsive_menus.2.0.x-dev.rector.patch"
+    },
+    "drupal/features": {
+      "3447460:Drupal 11 compatibility for Features module": "https://git.drupalcode.org/project/features/-/merge_requests/39.patch"
+    },
+    "drupal/a11y_paragraphs_tabs": {
+      "3428054: Automated Drupal 11 compatibility fixes for a11y_paragraphs_tabs": "https://www.drupal.org/files/issues/2024-03-15/a11y_paragraphs_tabs.2.0.0-beta1.rector.patch"
+    },
+    "drupal/uswds_paragraphs": {
+      "3435311: Automated Drupal 11 compatibility fixes for uswds_paragraphs": "https://www.drupal.org/files/issues/2024-03-25/uswds_paragraphs.2.0.0-beta3.rector.patch"
+    },
+    "drupal/themable_forms": {
+      "3434973: Automated Drupal 11 compatibility fixes for themable_forms": "https://www.drupal.org/files/issues/2024-03-25/themable_forms.8.x-1.0.rector.patch"
+    },
+    "drupal/paranoia": {
+      "3433851: Automated Drupal 11 compatibility fixes for paranoia": "https://www.drupal.org/files/issues/2024-03-24/paranoia.8.x-1.x-dev.rector.patch"
+    },
+    "drupal/paragraphs_webform": {
+      "3433849: Automated Drupal 11 compatibility fixes for paragraphs_webform": "https://www.drupal.org/files/issues/2024-03-24/paragraphs_webform.2.0.1.rector.patch"
+    },
+    "drupal/iek": {
+      "3430975: Automated Drupal 11 compatibility fixes for iek": "https://www.drupal.org/files/issues/2025-05-31/iek.1.x-dev.rector.patch"
     }
   }
 }
